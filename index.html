@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vitor Castro">
+        <title>Forma Geométrica - HTML5, JS, CSS</title>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <div id="forma"></div>
+
+        <button onclick="trocar()" id="trocar">Trocar forma </button>
+
+        <footer>
+            <a style="color: whitesmoke; text-align: center; text-decoration: none; font: italic; display: block; margin: 100px auto;" href="https://instagram.com/vitorguicastro">Desenvolvedor <br> @vitorguicastro</a>
+        </footer>
+
+    </body>
+
+    <style>
+        body{
+            margin: auto;
+            background: black;
+        }
+        
+        #forma{
+            background: blue;
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 80px;
+            display: block;
+            width: 250px;
+            height: 250px;
+        }
+
+        #trocar{
+            position: relative;
+            margin-top: 165px;
+            margin: auto;
+            display: block;
+
+            width: 160px;
+            height: 60px;
+
+            border: none;
+            border-radius: 20px 40px 30px 40px;
+            cursor: pointer;
+            outline: none;
+            font-size: 22px;
+            font-weight: bold
+        }
+
+        footer {
+            animation: pulse 5s infinite;
+            margin: 0 auto;
+            display: table;
+            margin-top: 50px;
+            animation-direction: alternate;
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+            }
+
+            @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(1);
+                -webkit-filter: brightness(100%);
+                
+            }
+            100% {
+                -webkit-transform: scale(1.1);
+                -webkit-filter: brightness(2%);
+            }
+            }
+
+            @keyframes pulse {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+            100% {
+                transform: scale(1.1);
+                filter: brightness(200%);
+            }
+            }
+                </style>
+</html>
